@@ -19,7 +19,7 @@ function Home() {
 
   const handleKeypress = e => {
     //it triggers by pressing the enter key
-  if (e.charCode == 13) {
+  if (e.charCode === 13) {
     getDetails();
   }
   };
@@ -36,7 +36,7 @@ function Home() {
                 <div className="movies" key={movie.imdbID}>
                   {/* <img src={movie.Poster} /> */}
                   <Link className="movie-container" to={`/moviedetails/${movie.imdbID}`}><div className="movie">
-                  <img src={movie.Poster} /><p className="movie-title">{movie.Title}</p>
+                  <img src={movie.Poster} alt="poster" /><p className="movie-title">{movie.Title}</p>
                     </div></Link>
                 </div>
               ))}</>

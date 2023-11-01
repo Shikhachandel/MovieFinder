@@ -13,6 +13,7 @@ function App(){
         <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="moviedetails/:movieid" element={<Details />}></Route>
+            {/* <Route path="searchForm" element={<SearchForm />}></Route> */}
         </Routes>
         </BrowserRouter>
         
