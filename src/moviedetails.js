@@ -5,7 +5,7 @@ function Details() {
 let params = useParams();
 const [movie, setMovie] = useState();
 useEffect(() => {
-    fetch(`http://www.omdbapi.com/?i=${params.movieid}&apikey=142e1265`)
+    fetch(`https://www.omdbapi.com/?i=${params.movieid}&apikey=142e1265`)
       .then((response) => response.json())
       .then((data) => setMovie(data));
   }, [params.movieid]);
