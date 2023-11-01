@@ -5,7 +5,7 @@ function Home() {
   const [movies, setMovies] = useState();
   const [search, setSearch] = useState("Harry Potter");
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?s=${search}&apikey=142e1265`)
+    fetch(`https://www.omdbapi.com/?s=${search}&apikey=142e1265`)
       .then((response) => response.json())
       .then((data) => setMovies(data));
   }, [search]);

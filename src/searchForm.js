@@ -5,7 +5,7 @@ export default function SearchForm() {
     const [blog, setBlog] = useState([])
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:3000/blogs/`)
+        fetch(`https://127.0.0.1:3000/blogs/`)
       .then((response) => response.json())
       .then((data) => {setBlog(data); console.log(data)})
     }, [])
@@ -14,7 +14,7 @@ export default function SearchForm() {
     //   setSearchBlogName(document.getElementById('name').value)
     var searchBlogName = document.getElementById('name').value
     //   params.blogid = searchBlogName
-    fetch(`http://127.0.0.1:3000/blogs/ids?id=${searchBlogName}`)
+    fetch(`https://127.0.0.1:3000/blogs/ids?id=${searchBlogName}`)
       .then((response) => response.json())
       .then((data) => setBlog([data]));
       
