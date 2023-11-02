@@ -18,11 +18,11 @@ return(<div>
                     </div>
                     <div className="desc-text">
                         <h2>{movie.Title}</h2>
-                        <p className="plot">{movie.Plot}</p>
-                        <p>Actors : {movie.Actors}</p>
-                        <p>Released : {movie.Released}</p>
-                        <p>IMDB Ratings : {movie.imdbRating}</p>
-                        <p>Runtime : {movie.Runtime}</p>
+                        <div className="plot">{movie.Plot}</div>
+                        <div><div className="plot">Actors</div> : {movie.Actors}</div>
+                        <div><div className="plot">Released</div> : {movie.Released}</div>
+                        <div><div className="plot">IMDB Ratings</div> : {movie.imdbRating}</div>
+                        <div><div className="plot">Runtime</div> : {movie.Runtime}</div>
                     </div>
                 </div>
             </> : <h1>Loading...</h1>}
