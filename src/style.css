@@ -19,6 +19,7 @@ body{
     background-color: var(--light);
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .title{
@@ -34,6 +35,7 @@ body{
 .title-link{
     text-decoration: none;
     color: var(--light);
+    display: flex;
 }
 h1{
     font-family: 'Caveat', cursive;
@@ -41,6 +43,12 @@ h1{
     margin: 20px auto;
     font-size: 45px;
 }
+.title__icon{
+    max-width: 4rem;
+    object-fit: contain;
+    margin: 0 1rem;
+}
+
 .movie-list{
     display: flex;
     flex-wrap: wrap;
@@ -171,4 +179,25 @@ button{
 }
 .desc-text p{
     margin: 1vw auto;
+}
+
+/* Footer */
+.footer_container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.horizontal_line{
+    content: "";
+    width: 100%;
+    border-top: 2px solid var(--darker);
+}
+.content{
+    text-align: center;
+    padding: 3rem 0;
+    font-size: larger;
+}
+.footer_link{
+    text-decoration: none;
 }
