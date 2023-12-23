@@ -1,24 +1,12 @@
 import React from "react";
-import { render } from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./header.js";
-import Home  from "./home.js";
-import Details from "./moviedetails.js";
-import Footer from "./footer.js";
+import ReactDOM from "react-dom/client";
 import "./style.css"
+import App from "./app";
 
-function App(){
-    return(
-        <BrowserRouter>
-        <Header />
-        <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="moviedetails/:movieid" element={<Details />}></Route>
-        </Routes>
-        <Footer />
-        </BrowserRouter>
-        
-    );
-}
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-render(<App/>, document.getElementById("root"));
+root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
