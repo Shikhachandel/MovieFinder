@@ -17,7 +17,7 @@
 }
 
 .dark {
-    --layer1: #0b325b;
+    --layer1: #274e79;
     --shadow: #306599;
     --hover: #0b325b;
     --background: #000000;
@@ -79,14 +79,14 @@ h1 {
     margin: 0 1rem;
 }
 
-.theme-button {
+.theme-button, .auth-button {
     height: max-content;
     padding: 10px 14px;
 }
 
 /* homepage */
 
-.movie-list {
+.movie-list, .bookmarks, .watchlist {
     display: flex;
     flex-wrap: wrap;
     margin: 0 4rem;
@@ -163,6 +163,7 @@ h1 {
     text-decoration: none;
     color: inherit;
 }
+
 
 .suggestion-list {
     position: absolute;
@@ -255,4 +256,67 @@ h1 {
 .footer_link {
     text-decoration: none;
     color: var(--text-highlight)
+}
+
+.auth-button{
+    text-decoration: none;
+    color: var(--text);
+}
+
+.login-form, .signup-form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+    margin-bottom: 30px;
+    padding: 40px;
+    background-color: var(--layer1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--layer1);
+}
+
+.movie-icons img{
+    height: 1.2rem;
+    color: wheat;
+    overflow: visible;
+}
+
+.movie-icons{
+    cursor: pointer;
+}
+
+.bookmarks, .watchlist{
+    color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bookmarks li:hover, .watchlist li:hover{
+    color: var(--text-highlight);
+    cursor: pointer;
+}
+
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--layer1);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.form-link{
+    text-decoration: none;
+    color: var(--text-highlight);
+    font-style: italic;
+}
+
+.form-link:hover{
+    color: red;
 }

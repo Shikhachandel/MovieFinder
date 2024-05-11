@@ -6,11 +6,11 @@ function Footer() {
                 Project by
                 <a
                     className="footer_link"
-                    href="https://sugatdhole.com/"
+                    href="https://github.com/Shikhachandel"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {` @Sugat `}
+                    {` @Shikha `}
                 </a>
                 | Powered by @React
             </div>

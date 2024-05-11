@@ -14,8 +14,8 @@ function Home() {
 
   return (
     <div>
-     <Search setSearch={setSearch} />
-     
+      <Search setSearch={setSearch} />
+      
       <div className="movie-list">
         {
           movies && <> <Movies movies={movies} /> </>

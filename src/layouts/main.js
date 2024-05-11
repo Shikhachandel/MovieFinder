@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../components/header'
-import Footer from '../components/footer'
+// import Footer from '../components/footer'
 import { Outlet } from 'react-router-dom'
 import ThemeContext from '../context/theme/ThemeContext'
 
@@ -23,7 +23,7 @@ function MainLayout() {
         <ThemeContext.Provider value={{theme, changeTheme}}>
             <Header />
             <Outlet />
-            <Footer />
+            {/* <Footer /> */}
         </ThemeContext.Provider>
     )
 }

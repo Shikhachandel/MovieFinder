@@ -59,7 +59,7 @@ function Search({ setSearch }) {
                             searchResult && <> {
                                 searchResult?.Search?.map((movie) => (
                                     <div key={movie.imdbID}>
-                                        <Link id="search-movie-title" className="link" to={`/moviedetails/${movie.imdbID}`}>
+                                        <Link id="search-movie-title" className="link" to={`/movie/${movie.imdbID}`}>
                                             <p className="movie-title">{movie.Title}</p>
                                         </Link>
                                     </div>
@@ -70,7 +70,6 @@ function Search({ setSearch }) {
                 </div>
             </div>
             <button onClick={getDetails} id="search-btn">Search</button>
-
         </div>
     )
 }
